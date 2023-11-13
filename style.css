@@ -1,0 +1,95 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'B Nazanin';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    width: 600px;
+}
+
+header{
+    background-color: orange;
+    text-align: center;
+    padding: 30px;
+    color: white;
+    border-radius: 5px;
+}
+
+header h1{
+    margin-bottom: 30px;
+}
+
+input{
+    font-family: 'B Nazanin';
+    width: 75%;
+    float: left;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    
+}
+
+button{
+    color: white;
+    width: 22%;
+    font-size: 20px;
+    float: right;
+    padding: 10px;
+    background-color: rgb(203, 197, 197);
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: gray;
+}
+header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.task-list{
+    max-height: 300px;
+    overflow-y: auto;
+}
+.task-list li{
+    list-style-type: none;
+    background-color: rgb(220, 220, 220);
+    padding: 25px;
+    font-size: 20px;
+    user-select: none;
+    color: gray;
+    transition: all 250ms;
+    position: relative;
+}
+
+.task-list li:hover{
+    background-color: gray;
+    color: white;
+}
+li span{
+    position: absolute;
+    right: 25px;
+    color: black;
+}
+
+li .trash:hover{
+    color: red;    
+    display: inline-block;
+}
+.check{
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
