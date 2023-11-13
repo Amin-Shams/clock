@@ -58,10 +58,10 @@ taskList.addEventListener('click', (event) => {
             
         }
     }
-    else if(goal.nodeName === 'LI' && goal.firstElementChild.classList.contains('check') == false){
-        goal.style.textDecoration = 'line-through';
-        goal.innerHTML = '<i class="check fa-solid fa-check fa-beat-fade" style="color: #033300;"></i>' + goal.innerHTML
-    } else if(goal.nodeName === 'LI' && goal.firstElementChild.classList.contains('check') == true){
+    // else if(goal.nodeName === 'LI' && goal.firstElementChild.classList.contains('check') == false){
+    //     goal.style.textDecoration = 'line-through';
+    //     goal.innerHTML = '<i class="check fa-solid fa-check fa-beat-fade" style="color: #033300;"></i>' + goal.innerHTML}
+    else if(goal.nodeName === 'LI' && goal.firstElementChild.classList.contains('check') == true){
         goal.firstElementChild.remove();
         goal.style.textDecoration = 'none';
     }
